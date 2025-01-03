@@ -31,6 +31,7 @@
 
 :root {
     --mode: light;
+    --navbar-position: static;
     --font-stack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --sidebar-background: #2ba5ff;
     --main-background: #dfe5e7;
@@ -183,6 +184,9 @@ body {
 /*Navbar Start*/
 
 .navbar {
+    position: var(--navbar-position);
+    top: 0;
+
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 

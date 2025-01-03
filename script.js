@@ -13,14 +13,34 @@ function switchAppearance(mode) {
     }
 }
 
+function pinNavbar(action) {
+    if (action == "pin") {
+        rootElement.style.setProperty("--navbar-position", "sticky");
+        pinIcon.classList.add("hide");
+        unpinIcon.classList.remove("hide");
+    }
+    else if (action == "unpin") {
+        rootElement.style.setProperty("--navbar-position", "static");
+        unpinIcon.classList.add("hide");
+        pinIcon.classList.remove("hide");
+    }
+}
+
 
 
 let darkModeIcon = document.querySelector(".dark-mode");
 let lightModeIcon = document.querySelector(".light-mode");
+
+let pinIcon = document.querySelector(".pin");
+let unpinIcon = document.querySelector(".unpin");
+
 let rootElement = document.documentElement;
 
 darkModeIcon.addEventListener("click", () => { switchAppearance("dark") });
 lightModeIcon.addEventListener("click", () => { switchAppearance("light") });
+
+pinIcon.addEventListener("click", () => { pinNavbar("pin") });
+unpinIcon.addEventListener("click", () => { pinNavbar("unpin") });
 
 
 document.addEventListener("DOMContentLoaded", () => {
