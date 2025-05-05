@@ -10,8 +10,6 @@ You can view the original design given [here](https://cdn.statically.io/gh/TheOd
 
 It should be mention that the design implemented isn't one-to-one, there are several nuances.
 
-*JavaScript was only used to switch between dark and light mode*
+**Skills demonstrated: CSS Grid, implementing a dashboard from a given design, basic light/dark mode**
 
-**Skills demonstrated: Intermediate HTML, Intermediate CSS, basic JavaScript**
-
-**Webpage responsiveness: THIS PROJECT WILL NOT DISPLAY PROPERLY ON A MOBILE PHONE**
+**Webpage responsiveness: THIS PROJECT WILL NOT DISPLAY PROPERLY ON MOBILE DEVICES**
